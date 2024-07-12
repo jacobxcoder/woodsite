@@ -1,0 +1,30 @@
+{
+  "name": "woodsite",
+  "version": "1.0.0",
+  "description": "A landing page for the woodsite agency",
+  "scripts": {
+    "init-build": "mkdir dist",
+    "build-css": "npx uglifycss src/style.css > dist/style.min.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jacobxcoder/woodsite.git"
+  },
+  "keywords": [
+    "landing",
+    "page",
+    "woodsite",
+    "carpenters",
+    "trades",
+    "usa"
+  ],
+  "author": "jacobxcoder",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jacobxcoder/woodsite/issues"
+  },
+  "homepage": "https://github.com/jacobxcoder/woodsite#readme",
+  "devDependencies": {
+    "uglifycss": "^0.0.29"
+  }
+}
