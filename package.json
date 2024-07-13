@@ -4,7 +4,8 @@
   "description": "A landing page for the woodsite agency",
   "scripts": {
     "init-build": "mkdir dist",
-    "build-css": "npx uglifycss src/style.css > dist/style.min.css"
+    "build-css": "npx uglifycss src/style.css > dist/style.min.css",
+    "build-html": "npx html-minifier-terser --input-dir src --output-dir dist --file-ext html --remove-comments --collapse-whitespace --minify-js true"
   },
   "repository": {
     "type": "git",
@@ -25,6 +26,7 @@
   },
   "homepage": "https://github.com/jacobxcoder/woodsite#readme",
   "devDependencies": {
+    "html-minifier-terser": "^7.2.0",
     "uglifycss": "^0.0.29"
   }
 }
