@@ -4,7 +4,7 @@
   "description": "A landing page for the woodsite agency",
   "scripts": {
     "init-build": "mkdir dist",
-    "build-css": "npx uglifycss src/style.css > dist/style.min.css",
+    "build-css": "npx uglifycss src/style.css > dist/style.css",
     "build-html": "npx html-minifier-terser --input-dir src --output-dir dist --file-ext html --remove-comments --collapse-whitespace --minify-js true",
     "build": "npm run init-build && npm run build-css && npm run build-html"
   },
