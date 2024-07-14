@@ -17,6 +17,8 @@ body {
   font-size: 18px;
   color: var(--base);
   line-height: 1.3;
+  padding-top: 16px;
+  padding-bottom: 24px;
 }
 
 #wave-decoration {
@@ -27,14 +29,14 @@ body {
 
 header,
 main {
-  width: 800px;
-  max-width: 90%;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
 }
 
 header {
+  width: 800px;
+  max-width: 90%;
   margin-top: 94px;
 }
 
@@ -87,10 +89,12 @@ li span {
   color: var(--base);
 }
 
-
-#why-us h2, #booking h2 {
-  font-size: 32px;
-  margin-bottom: 24px;
+#why-us {
+  width: 800px;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
 div.ul-container {
@@ -107,30 +111,13 @@ ul {
   margin-bottom: 32px;
 }
 
-#booking h2 {
-  margin-bottom: 8px;
-}
-
-#calendly-container {
-  margin-top: 32px;
-  margin-bottom: 64px;
-  width: 100%;
-  height: 300px;
-  border: 1px solid #1a1a1a35;
-  border-radius: 12px;
-
-  /* Glassmorphism */
-  background: rgba(255, 255, 255, 0.53);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(12.7px);
-  -webkit-backdrop-filter: blur(12.7px);
-  border: 1px solid rgba(255, 255, 255, 0.02);
-}
-
 h3 {
   color: var(--accent);
   mix-blend-mode: difference;
+}
+
+#contact {
+  margin-top: -48px;
 }
 
 #email-button {
@@ -155,6 +142,8 @@ h3 {
 
 iframe {
   opacity: 95%;
+  max-width: 90%;
+  margin-top: -32px;
 }
 
 #loader-container {
@@ -202,5 +191,30 @@ iframe {
 
   ul li p {
     text-align: left;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  #booking {
+    margin-top: 32px;
+  }
+
+  #calendly-container {
+    border: 1px solid #1a1a1a15;
+    width: 90%;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.1);
+    margin-bottom: 42px;
+  }
+
+  iframe {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  #contact {
+    margin-top: 32px;
   }
 }
