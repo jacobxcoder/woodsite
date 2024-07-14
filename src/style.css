@@ -36,7 +36,6 @@ main {
 
 header {
   margin-top: 94px;
-  margin-bottom: 32px;
 }
 
 header span {
@@ -62,6 +61,7 @@ h1 {
   width: 90%;
   margin: 0 auto;
   color: var(--base-secondary);
+  margin-bottom: 22px;
 }
 
 li {
@@ -87,9 +87,6 @@ li span {
   color: var(--base);
 }
 
-#why-us, #booking {
-  margin-top: 64px;
-}
 
 #why-us h2, #booking h2 {
   font-size: 32px;
@@ -121,12 +118,26 @@ ul {
   height: 300px;
   border: 1px solid #1a1a1a35;
   border-radius: 12px;
+
+  /* Glassmorphism */
+  background: rgba(255, 255, 255, 0.53);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(12.7px);
+  -webkit-backdrop-filter: blur(12.7px);
+  border: 1px solid rgba(255, 255, 255, 0.02);
+}
+
+h3 {
+  color: var(--accent);
+  mix-blend-mode: difference;
 }
 
 #email-button {
   display: block;
   width: 200px;
   margin: 8px auto 0 auto;
+  border: 1px solid #ffffff80;
   padding: 12px;
   border-radius: 12px;
   color: white;
